@@ -3,8 +3,8 @@
          - name: Installing httpd package
            package:
               name: httpd
-              state: present
+              state: absent
          - name: starting the service
            service:
               name: httpd
-              state: started
+              state: stopped
