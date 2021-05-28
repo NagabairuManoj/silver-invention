@@ -1,4 +1,4 @@
-- hosts: tests
+- hosts: test
   tasks:
          - name: Installing httpd package
            package:
