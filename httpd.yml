@@ -1,8 +1,10 @@
-- name: Installing httpd package
-  package:
-      name: httpd
-      state: present
-- name: starting the service
-  service:
-      name: httpd
-      state: started
+- hosts: tests
+  tasks:
+         - name: Installing httpd package
+           package:
+              name: httpd
+              state: present
+         - name: starting the service
+           service:
+              name: httpd
+              state: started
