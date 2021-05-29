@@ -1,6 +1,7 @@
 - hosts: my_lb
-  vars_files:
-          - haproxy_vars.yml
+  vars:
+          - frontend_port: 80
+          - backend_port: 8080
   tasks:
           - name: installing haproxy
             package:
